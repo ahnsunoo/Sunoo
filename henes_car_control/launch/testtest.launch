@@ -1,4 +1,0 @@
-<launch>
-    <node name="henes_car_control_" pkg="henes_car_control" type="henes_car_control_node_joy" output="screen" />
-
-</launch>
