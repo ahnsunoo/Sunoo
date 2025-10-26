@@ -1,0 +1,6 @@
+<launch>
+    <node name="henes_car_control" pkg="henes_car_control" type="henes_car_control_node" output="screen" /> 
+
+    <include file="$(find teleop_twist_joy)/launch/teleop.launch"/> 
+    
+</launch>

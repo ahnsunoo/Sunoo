@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_drive</name>
+  <version>0.0.1</version>
+  <description>Waypoint 기반 자율주행 노드 (Python)</description>
+
+  <maintainer email="icas@todo.todo">icas</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Python 노드 실행에 필요한 의존성 -->
+  <depend>rospy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <!-- Noetic 환경에서 python3 실행 보장 -->
+  <exec_depend>python3</exec_depend>
+
+  <export/>
+</package>
+

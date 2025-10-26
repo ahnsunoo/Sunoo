@@ -1,0 +1,12 @@
+<launch>
+  <!-- 필요하면 파라미터 조정 -->
+  <!-- <param name="obstacle_check_waypoints" value="[]" /> -->
+  <node pkg    =  "lidar_utils"
+  	type   =  "my_lidar.py" 
+  	name   =  "lidar_obstacle_detector" 
+  	output =  "screen">
+    <!-- 토픽 이름이 다르면 여기서 remap -->
+    <!-- <remap from="/scan" to="/rplidar/scan"/> -->
+    <!-- <remap from="/current_waypoint" to="/my_waypoint_index"/> -->
+  </node>
+</launch>
