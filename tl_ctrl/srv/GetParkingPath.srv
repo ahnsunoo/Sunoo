@@ -1,6 +1,0 @@
-# GetParkingPath.srv
-
-# 요청 (Request)
----
-# 응답 (Response)
-string path_type
