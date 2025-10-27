@@ -1,0 +1,20 @@
+<launch>
+  <!-- === 인자 정의 === -->
+  <arg name="serial_port"     default="/dev/ttyUSB0"/>
+  <arg name="serial_baudrate" default="1000000"/>         <!-- S2/S3 권장 -->
+  <arg name="frame_id"        default="laser_frame"/>
+  <arg name="inverted"        default="false"/>
+  <arg name="angle_compensate" default="true"/>
+  <!-- 주의: rplidar_ros에서 scan_frequency 파라미터는 무시되는 경우가 많음. 필요 시만 사용 -->
+  <!-- <arg name="scan_frequency" default="10.0"/> -->
+
+  <node name="rplidar" pkg="rplidar_ros" type="rplidarNode" output="screen">
+    <param name="serial_port"      value="$(arg serial_port)"/>
+    <param name="serial_baudrate"  value="$(arg serial_baudrate)"/>
+    <param name="frame_id"         value="$(arg frame_id)"/>
+    <param name="inverted"         value="$(arg inverted)"/>
+    <param name="angle_compensate" value="$(arg angle_compensate)"/>
+    <!-- <param name="scan_frequency"  value="$(arg scan_frequency)"/> -->
+  </node>
+</launch>
+
