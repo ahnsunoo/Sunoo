@@ -1,6 +1,0 @@
-<launch>
-    <node pkg="imu_pkg" type="imu_publisher.py" name="imu_publisher" output="screen">
-        <param name="serial_port" value="/dev/ttyUSB0"/>
-        <param name="baudrate" value="115200"/>
-    </node>
-</launch>
